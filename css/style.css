@@ -1,0 +1,622 @@
+html, body, header, section{
+  height: 100%;
+  font-family: Helvetica,Arial,sans-serif;
+}
+.nav-gsm{
+  display: none;
+}
+
+h2{
+  font-size: 80px;
+  color: #1e1e1e;
+  line-height: 75px;
+  margin: 0;
+}
+h2 span{
+  color: #ff3465;
+}
+p{
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+}
+a{
+  color: #FF3465;
+  text-decoration: none;
+}
+
+/* header */
+header{
+  position: relative;
+  background: url(../img/cowboy_hero_main.jpg) no-repeat center/cover;
+}
+header .text{
+  position: absolute;
+  left: 40px;
+  bottom: 60px;
+}
+/* * header */
+/* nav produits */
+.nav-produits{
+  padding: 10px 40px;
+  position: relative;
+}
+.nav-produits h1{
+  display: inline-block;
+}
+.nav-produits h1 a{
+  color: #1e1e1e;
+}
+.nav-produits a{
+  margin: 0 25px;
+}
+.nav-produits > a{
+  font-size: 13px;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav-produits > a::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 0;
+  background: #303030;
+  transition: .3s width ease-in-out;
+}
+.nav-produits > a:hover::after{
+  width: 100%;
+}
+/* * nav produits */
+/* nav produits */
+/* .nav-produits{
+  padding: 10px 40px;
+  position: relative;
+}
+.nav-produits h1, .nav-produits ul, .nav-produits li{
+  display: inline-block;
+}
+.nav-produits h1 a{
+  color: #1e1e1e;
+}
+.nav-produits ul{
+  padding: 0;
+  position: absolute;
+  top: 15px;
+}
+.nav-produits li{
+  margin: 0 25px;
+}
+.nav-produits li a{
+  font-size: 13px;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav-produits li a::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 0;
+  background: #303030;
+  transition: .3s width ease-in-out;
+}
+.nav-produits li a:hover::after{
+  width: 100%;
+} */
+/* * nav produits */
+/* nav langues */
+.nav-langues{
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.nav-langues ul, .nav-langues li, .nav-langues a{
+  display: block;
+  margin: 0;
+  padding: 0;
+  transition: .3s all ease-in-out;
+}
+.nav-langues a{
+  width: 170px;
+  text-align: center;
+  padding: 41px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #1e1e1e;
+  text-transform: uppercase;
+}
+.nav-langues a:hover{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.nav-langues ul li + li{
+  /* opacity: 0; */
+  display: none;
+}
+.nav-langues ul:hover li + li{
+  /* opacity: 100; */
+  display: block;
+}
+.nav-langues .float{
+  float: left;
+}
+.nav-langues ul + a{
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.nav-langues ul + a:hover, .nav-langues a + a:hover{
+  background-color: #fff;
+  color: #1e1e1e;
+}
+.nav-langues a + a{
+  background-color: #FF3465;
+  color: #fff;
+}
+/* * nav langues */
+/* pastille rose en bas à droite */
+.contact-client{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background: #FF3465;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.06), 0 2px 32px 0 rgba(0,0,0,.16);
+}
+.contact-client svg{
+  width: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* * pastille rose en bas à droite */
+/* partenaires */
+.partenaires{
+  background: #FF3465;
+  padding: 50px 2%;
+}
+.partenaires a{
+  color: #fff;
+  display: inline-block;
+  width: 16%;
+  margin: 2%;
+  vertical-align: middle;
+}
+/* * partenaires */
+/* section vélo */
+.section > div{
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.section div .text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 30px;
+}
+.section div p{
+  font-size: 20px;
+  color: #1e1e1e;
+  font-weight: inherit;
+}
+.section div a{
+  font-weight: bold;
+}
+.section-velo .photo{
+  background: url(../img/design-meets-technology.jpg) no-repeat left/cover;
+}
+/* * section vélo */
+/* section app */
+.section-app .photo{
+  background: url(../img/more-than-an-electric-bike.jpg) no-repeat left/cover;
+}
+.section-app > div{
+  float: right;
+}
+/* * section app */
+/* section plus */
+.section-plus .photo{
+  background: url(../img/we-are-here-for-you.jpg) no-repeat left/cover;
+}
+/* * section plus */
+/* customer */
+.customer{
+  background: #FAFAFA;
+  height: 900px;
+  position: relative;
+  padding: 100px 40px;
+}
+.customer .text{
+  margin-bottom: 50px;
+}
+.customer .hachetag{
+  font-size: 14px;
+}
+.customer h2{
+  font-size: 50px;
+  margin: 10px 0 40px;
+  line-height: 50px;
+}
+.comm{
+  background: #fff;
+  padding: 40px 50px;
+  float: left;
+  width: calc(50% - 20px);
+}
+.comm + .comm{
+  margin-left: 40px;
+}
+.comm p{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.comm .note{
+  float: right;
+}
+.comm .note span{
+  color: #ff3465;
+}
+.customer .comm-nav{
+  font-weight: bold;
+  position: absolute;
+  bottom: 100px;
+  left: 40px;
+}
+.customer .comm-nav a::after{
+  content: '<';
+}
+.customer .comm-nav a + a::after{
+  content: '>';
+}
+.customer .comm-nav a{
+  display: inline-block;
+  padding: 15px 20px;
+  color: #1E1E1E;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+}
+.customer .comm-nav a + a{
+  margin-left: 20px;
+}
+
+.customer > a{
+  font-weight: bold;
+  position: absolute;
+  bottom: 125px;
+  right: 40px;
+}
+/* * customer */
+/* footer */
+footer{
+  background: #1E1E1E;
+}
+.footer-haut{
+  padding: 120px 50px;
+}
+.footer-haut div{
+  display: inline-block;
+}
+.footer-haut p{
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-haut ul{
+  list-style-type:none;
+  margin: 0;
+}
+.footer-haut li:first-child{
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-haut a{
+  color: gray;
+  line-height: 25px;;
+  transition: .3s all ease-in-out;
+}
+.footer-haut a:hover{
+  color: #fff;
+}
+.footer-haut .cowboy li:first-child{
+  margin-bottom: 5px;
+}
+.footer-haut .cowboy li:first-child a{
+  color: #fff;
+}
+.footer-haut .abonnement{
+  width: 210px;
+  vertical-align: top;
+}
+.footer-haut .produit, .footer-haut .infos{
+  margin-left: 20px;
+}
+.footer-haut .cowboy{
+  margin-left: 130px;
+}
+.footer-bas{
+  border-top: 1px solid #292929;
+  padding: 50px;
+  font-size: 14px;
+}
+.footer-bas .follow-us{
+  display: inline-block;
+  width: 20%;
+}
+.footer-bas a{
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-bas span{
+  color: gray;
+  font-weight: bold;
+}
+.footer-bas .follow-us a + a{
+  margin-left: 10px;
+}
+.footer-bas .terms{
+  float: right;
+  width: 80%;
+  text-align: center;
+}
+.footer-bas .terms a + a{
+  margin: 0 50px;
+}
+/* * footer */
+
+/* screen 450px */
+@media screen and (max-width:450px){
+  body{
+    width: auto;
+  }
+
+  /* nav-gsm */
+  .nav-gsm{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1e1e1e;
+    background: #FAFAFA;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    transition: .3s all ease-in-out;
+    overflow: hidden;
+  }
+  .nav-gsm:hover{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background: #fff;
+    top: 10px;
+    right: 10px;
+  }
+
+
+
+  .nav-croix{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1e1e1e;
+    background: #FAFAFA;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+  }
+  .nav-gsm:hover .nav-croix{
+    border-color: #FF3465;
+  }
+  .nav-gsm:hover span{
+    background: #FF3465;
+  }
+  .nav-croix span{
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background: #1e1e1e;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s all ease-in-out;
+  }
+  .nav-croix span:first-child{
+    top: calc(50% - 9px);
+  }
+  .nav-croix span:last-child{
+    top: calc(50% + 9px);
+  }
+  .nav-gsm:hover span:nth-of-type(2){
+    opacity: 0;
+  }
+  .nav-gsm:hover span:first-child{
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .nav-gsm:hover span:last-child{
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
+
+  .nav-gsm .nav-gsm-a{
+    text-align: center;
+  }
+  .nav-gsm .nav-gsm-a a{
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    color: #1e1e1e;
+    transition: .3s all ease-in-out;
+  }
+  .nav-gsm .nav-gsm-a a:first-child{
+    margin-top: 60px;
+  }
+  .nav-gsm .nav-gsm-a a:hover{
+    background: #FF3465;
+    color: #fff;
+  }
+  .nav-gsm .nav-gsm-a .gsm-fr{
+    border-top: 1px solid #303030;
+  }
+  .nav-gsm .nav-gsm-a a.gsm-lang:hover{
+    background: #1E1E1E;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+  /* * nav-gsm */
+  .nav-produits > a, .nav-langues ul, .contact-client{
+    display: none;
+  }
+
+  .nav-langues{
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+  }
+  .nav-langues > a{
+    width: 50%;
+  }
+  header .text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.75);
+    padding: 25px;
+    bottom: auto;
+  }
+  header .text h2{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  header .text p{
+    color: #1E1E1E;
+  }
+  header .text a{
+    display: block;
+  }
+  
+  .partenaires {
+    padding: 0;
+  }
+  .partenaires a.logo-techcrunch, .partenaires a.logo-la-libre{
+    width: 50%;
+    margin: 0;
+    padding: 40px;
+  }
+  .partenaires a.logo-trends, .partenaires a.logo-rtbf, .partenaires a.logo-de-tijd{
+  width: calc(100% / 3);
+  margin: 0;
+  padding: 0 40px 40px;
+  }
+
+  .section{
+    height: auto;
+  }
+  .section .text{
+    position: static;
+    padding: 80px 40px;
+  }
+  .section > div{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .section .photo{
+    height: 400px;
+    display: block;
+  }
+  .section div .text {
+    position: static;
+    transform: translateY(0);
+    padding: 80px 40px;
+  }
+  h2{
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .customer{
+    padding: 80px 40px;
+  }
+  .customer .comm + .comm{
+    display: none;
+  }
+  .customer .comm{
+    width: auto;
+  }
+  .customer > a {
+    bottom: 75px;
+  }
+  .customer .comm-nav{
+    bottom: 60px;
+  }
+  .customer .comm-nav a + a{
+    margin-left: 10px;
+  }
+  .footer-haut {
+    padding: 40px;
+  }
+  .footer-haut .abonnement{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footer-haut .produit, .footer-haut .infos {
+    margin-left: 0%;
+    width: 50%;
+}
+  .footer-haut .cowboy{
+    margin: 30px auto 0;
+    display: block;
+    width: max-content;
+  }
+  .footer-haut .cowboy ul{
+    padding-left: 0;
+  }
+  .footer-bas{
+    padding: 40px;
+  }
+  .footer-bas .follow-us{
+    width: 100%;
+  }
+  .footer-bas .follow-us a{
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .footer-bas .terms {
+    float: none;
+    width: 100%;
+  }
+  .footer-bas .terms a, .footer-bas .terms a + a{
+    display: block;
+    margin: 20px 0;
+  }
+}
+/* * screen 450px */
