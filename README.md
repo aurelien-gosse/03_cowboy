@@ -1,2 +1,2 @@
-# 03_cowboy
-https://aurelien-gosse.github.io/03_cowboy/
+# cowboy
+https://aurelien-gosse.github.io/cowboy/
